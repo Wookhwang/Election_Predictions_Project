@@ -17,9 +17,9 @@
 1. Download Repository 
 
 2. Crawling : 원하는 플렛폼 파일을 선택한뒤 설치 경로 수정 이후에 크롤링 진행
- - Naver_Crawling은 키워드, 원하는 날짜, 최대 페이지, 관련도를 입력.
- - Youtube_Crawling은
- - Twitter_Crawling은
+ - Naver_Crawling : 키워드, 원하는 날짜, 최대 페이지, 관련도를 입력.
+ - Youtube_Crawling :
+ - Twitter_Crawling :
  
 3. 1차 Data preprocessing : ~
 
