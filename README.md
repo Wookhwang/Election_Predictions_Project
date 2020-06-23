@@ -11,7 +11,6 @@
   * version : 2.0.0 rc
 * Scikit-Learn
   * version : 0.22.1
-* Download Repository and 
 
 
 ## 사용 방법
