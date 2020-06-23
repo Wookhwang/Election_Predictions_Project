@@ -21,11 +21,17 @@
    * 키워드, 원하는 날짜, 최대 페이지, 관련도를 입력.
  * Youtube_Crawling
    * selenium, beautifulsoup, pandas, chromedriver 필요하고 유튜브는 댓글이나 영상들이 스크롤하고 일정 시간이 지나야 업로드가 되기때문에 time.sleep이 필요함 .get_urls_from_youtube_with_keyword 함수와 crawl_youtube_page_html_sources를 통해 검색한 키워드를 통해 영상들의 url을 저장하고 url을 불러와 접근한다. get_user_IDs_and_comments 함수를 통해 user ID와 댓글을 크롤링하고 my_dataframes 에 저장한다.  마지막으로 convert_csv_from_dataframe 을 통해 해당영상의 이름으로 xlsx파일 형태로 저장한다.
- * Twitter_Crawling 
-  * 
-   
- 
-3. Sentiment(1차 Data preprocessing) : ~
+ * Twitter_Crawling 	
+   * main__.py에 키워드, 원하는 날짜 기간을 입력
+   * __main__.py를 실행하면 key_word + "sample_twitter_data_시작일자_to_종료일자.csv 파일로 크롤링된 데이터가 저장됨
+  
+3. Sentiment(1차 Data preprocessing) : Sentiment/Sentiment_twiiter/main__.py를 실행
+ - Sentiment_twiiter/Data/Input 위치에 학습을 위해 태깅(문장+태깅값)된 txt 파일과 감성분석을 실행할 txt 파일(태깅되지 않은 값)을 저장
+ - MySentiment_test.py에 학습데이터 파일 이름, 만들려고 하는 Json 파일 이름, model 이름을 입력
+ - __main__.py를 실행하여 감성분석을 위한 학습을 진행
+ - Sentiment_twiiter/Data/output 위치에 학습에 사용된 txt 파일을 Json으로 변환한 파일, 생성된 .h5 모델 파일과 해당 모델을 바탕으로 감성예측을 진행하여 태깅값이 반영된 결과 파일이 txt와 csv 2개의 형태로 생성
+ - 생성된 Json파일, 모델 파일은 후에 다른 크롤링 데이터에 대한 감성분석을 위해서 Sentiment_twiiter/Data/store에 저장
+ - 생성된 감성분석 결과 파일은 Lasso, Ridge 등의 분석을 위해 디렉토리를 옮겨서 추후 과정에 사용
 
 4. Morpheme(2차 Data preprocessing) : Mophene의 KoNLPy_DataFrame.py을 사용하여 크롤링 파일을 DataFrame 형태로 변환
  - title.txt은 DataFrame으로 전환할 Column 이름을 저장
