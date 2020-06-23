@@ -24,9 +24,9 @@
  * Twitter_Crawling :
    *
  
-3. 1차 Data preprocessing : ~
+3. Sentiment(1차 Data preprocessing) : ~
 
-4. 2차 Data preprocessing : Mophene의 KoNLPy_DataFrame.py을 사용하여 크롤링 파일을 DataFrame 형태로 변환
+4. Morpheme(2차 Data preprocessing) : Mophene의 KoNLPy_DataFrame.py을 사용하여 크롤링 파일을 DataFrame 형태로 변환
  - title.txt은 DataFrame으로 전환할 Column 이름을 저장
  - stopwords.txt는 제외할 단어를 
 
