@@ -21,9 +21,9 @@
    * 키워드, 원하는 날짜, 최대 페이지, 관련도를 입력.
  * Youtube_Crawling
    * selenium, beautifulsoup, pandas, chromedriver 필요하고 유튜브는 댓글이나 영상들이 스크롤하고 일정 시간이 지나야 업로드가 되기때문에 time.sleep이 필요함 .get_urls_from_youtube_with_keyword 함수와 crawl_youtube_page_html_sources를 통해 검색한 키워드를 통해 영상들의 url을 저장하고 url을 불러와 접근한다. get_user_IDs_and_comments 함수를 통해 user ID와 댓글을 크롤링하고 my_dataframes 에 저장한다.  마지막으로 convert_csv_from_dataframe 을 통해 해당영상의 이름으로 xlsx파일 형태로 저장한다.
- * Twitter_Crawling :
-   *Twitter_Crawling은 __main__.py에 키워드, 원하는 날짜 기간을 입력
-    __main__.py를 실행하면 key_word + "sample_twitter_data_시작일자_to_종료일자.csv 파일로 크롤링된 데이터가 저장됨
+ * Twitter_Crawling 
+  * 
+   
  
 3. Sentiment(1차 Data preprocessing) : ~
 
