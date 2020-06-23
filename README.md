@@ -25,6 +25,8 @@
 3. 1차 Data preprocessing : ~
 
 4. 2차 Data preprocessing : Mophene의 KoNLPy_DataFrame.py을 사용하여 크롤링 파일을 DataFrame 형태로 변환
+ - title.txt은 DataFrame으로 전환할 Column 이름을 저장
+ - stopwords.txt는 제외할 단어를 
 
 5. Regression : Regression의 Integration_Regression.py를 실행
  - 2차 Data preprocessing으로 생성한 DataFrame 파일을 Dataset으로 사용.
